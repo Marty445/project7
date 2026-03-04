@@ -18,7 +18,7 @@ if st.button ("Pokaji vsichki knigi"):
   if len(st.session_state.books) == 0:
     st.write("Nqma dobaveni knigi")
   else:
-  for book in st.session_state.books:
+   for book in st.session_state.books:
     st.write("Zaglavie:", book["title"])
     st.write("Avtor:", book["author"])
     st.write("Cena:", book[price])
