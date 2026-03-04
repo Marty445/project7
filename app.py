@@ -28,7 +28,7 @@ search_author = st.text_input("Vuvedi ime na avtor")
 if st.button("Tursi po avtor"):
   found = False
 for book in st.session_state.books:
- if book["author"] == search.author:
+ if book["author"] == search_author:
   st.write(book)
   found = True
  if found == False:
