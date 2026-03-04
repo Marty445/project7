@@ -1,7 +1,7 @@
 import streamlit as st
 st.title("Prilojenie")
 if "books" not in st.session_state:
-st.session_state.books = []
+ st.session_state.books = []
 st.header("Dobavi kniga")
 title = st.text_input("Zaglavie")
 author = st.text_input("Avtor")
