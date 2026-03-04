@@ -14,7 +14,7 @@ if st.button("Dobavi knigata"):
   }
   st.session_state.books.append(book)
   st.success("Knigata e dobavena")
-if st.button ("Pokaji vsichki knigi"):
+ if st.button ("Pokaji vsichki knigi"):
   if len(st.session_state.books) == 0:
     st.write("Nqma dobaveni knigi")
   else:
@@ -27,5 +27,9 @@ st.header("Tursene po avtor")
 search_author = st.text_input("Vuvedi ime na avtor")
 if st.button("Tursi po avtor"):
   found = False
-  if found == False:
+for book in st.session_state.books:
+ if book["author"] == search.author:
+  st.write(book)
+  found = True
+ if found == False:
     st.write("Nqma namereni knigi ot tozi avtor")
