@@ -31,5 +31,5 @@ for book in st.session_state.books:
  if book["author"] == search_author:
   st.write(book)
   found = True
- else if found == False:
+ else if: found == False:
     st.write("Nqma namereni knigi ot tozi avtor")
