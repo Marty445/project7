@@ -21,7 +21,7 @@ else:
    for book in st.session_state.books:
     st.write("Zaglavie:", book["title"])
     st.write("Avtor:", book["author"])
-    st.write("Cena:", book[price])
+    st.write("Cena:", book["price"])
     st.write("-----------------")
 st.header("Tursene po avtor")
 search_author = st.text_input("Vuvedi ime na avtor")
