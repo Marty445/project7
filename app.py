@@ -14,7 +14,7 @@ if st.button("Dobavi knigata"):
   }
   st.session_state.books.append(book)
   st.success("Knigata e dobavena")
- if st.button ("Pokaji vsichki knigi"):
+if st.button ("Pokaji vsichki knigi"):
   if len(st.session_state.books) == 0:
     st.write("Nqma dobaveni knigi")
  else:
